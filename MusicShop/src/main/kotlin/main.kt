@@ -11,11 +11,12 @@ fun main() {
     val result = if(totalPrice > discountMore) totalPrice - discountSecond else if(totalPrice > discountStart) totalPrice - discountOne else totalPrice
 
 
-    val customerRegular =
-        // у меня совсем нет идей, как вычислить постоянных покупателей
+    val customerRegular = true
+    val customerRandom = false
+
     val discountRegular = result/100
 
-    val finishResult = if(customerRegular true) result - discountRegular else result
+    val finishResult = if(customerRegular) result - discountRegular else result
 
     println("Сумма покупки $finishResult")
 }
